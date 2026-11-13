@@ -1,0 +1,63 @@
+{
+  "adapter": {
+    "sha256": "292cf826c736aa38b1e3d69b4a3e2963364eb37bbca1281073700021b166d52a",
+    "source": "dataset:toolsmith-grpo-base-adapter"
+  },
+  "adapter_dir": "toolsmith-grpo-base-adapter",
+  "adapter_source": "dataset:toolsmith-grpo-base-adapter",
+  "attention": "sdpa",
+  "dataset_manifest_sha256": "016b3bdd9386382d10d0e6afd7c132fdf48ee5aef2cdd301049f45d38e56cb7c",
+  "dtype": "float16",
+  "generation": {
+    "max_context_tokens": 4096,
+    "max_new_tokens": 256,
+    "seed": 17,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "limit": 10000,
+  "loops": 2,
+  "model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "model_revision": "f6c832e6963ddb74f62c75813a3e8c74b1af67b1",
+  "run_name": "grpo-base",
+  "seed": 17,
+  "shards": [
+    {
+      "run_name": "dory-grpo-base-shard0",
+      "shard": [
+        0,
+        2
+      ],
+      "wall_seconds": 5197.8
+    },
+    {
+      "run_name": "dory-grpo-base-shard1",
+      "shard": [
+        1,
+        2
+      ],
+      "wall_seconds": 5364.9
+    }
+  ],
+  "splits": [
+    "dev",
+    "test_iid",
+    "test_compositional",
+    "challenge"
+  ],
+  "stopped_by_time_guard": false,
+  "tasks_completed": 340,
+  "tasks_requested": 340,
+  "transformers_commit": "fcc6924dfbac964f00787859b568c867ef5ad4cb",
+  "versions": {
+    "peft": "0.21.2",
+    "toolsmith-rl": "0.1.0",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.23.0.dev0",
+    "trl": "1.17.1"
+  }
+}

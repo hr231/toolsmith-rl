@@ -1,0 +1,45 @@
+{
+  "adapter": {
+    "kernel": "toolsmith-dory-sft",
+    "sha256": "42fd457245d3f04c68c04f6e4514dc113f312189bcaed200a45fbd94f7fc426f"
+  },
+  "adapter_kernel": "toolsmith-dory-sft",
+  "attention": "sdpa",
+  "dataset_manifest_sha256": "016b3bdd9386382d10d0e6afd7c132fdf48ee5aef2cdd301049f45d38e56cb7c",
+  "dtype": "float16",
+  "generation": {
+    "max_context_tokens": 4096,
+    "max_new_tokens": 256,
+    "seed": 17,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "gpus": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "limit": 10000,
+  "loops": 2,
+  "model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "model_revision": "f6c832e6963ddb74f62c75813a3e8c74b1af67b1",
+  "run_name": "dory-sft-full",
+  "seed": 17,
+  "splits": [
+    "dev",
+    "test_iid",
+    "test_compositional",
+    "challenge"
+  ],
+  "stopped_by_time_guard": false,
+  "tasks_completed": 340,
+  "tasks_requested": 340,
+  "transformers_commit": "fcc6924dfbac964f00787859b568c867ef5ad4cb",
+  "versions": {
+    "peft": "0.21.2",
+    "toolsmith-rl": "0.1.0",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.23.0.dev0",
+    "trl": "1.17.1"
+  },
+  "wall_seconds": 6837.4
+}

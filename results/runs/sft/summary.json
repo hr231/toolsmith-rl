@@ -1,0 +1,111 @@
+{
+  "by_family": {
+    "affine_even": {
+      "episodes": 33,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 144.27272727272728,
+      "mean_seconds": 34.01260606060606,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    },
+    "affine_sum": {
+      "episodes": 33,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 137.27272727272728,
+      "mean_seconds": 32.73551515151515,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    },
+    "challenge_chunk": {
+      "episodes": 10,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 139.2,
+      "mean_seconds": 35.1454,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    },
+    "challenge_clamp": {
+      "episodes": 10,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 135.3,
+      "mean_seconds": 33.9848,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    },
+    "challenge_split": {
+      "episodes": 10,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 171.8,
+      "mean_seconds": 42.5418,
+      "mean_tool_calls": 6.8,
+      "success_rate": 0.2
+    },
+    "challenge_window": {
+      "episodes": 10,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 150.7,
+      "mean_seconds": 37.2958,
+      "mean_tool_calls": 5.5,
+      "success_rate": 0.9
+    },
+    "delimiter_first": {
+      "episodes": 33,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 155.0,
+      "mean_seconds": 35.88999999999999,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    },
+    "delimiter_last": {
+      "episodes": 33,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 155.0,
+      "mean_seconds": 36.11984848484848,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    },
+    "filter_ceiling": {
+      "episodes": 34,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 136.0,
+      "mean_seconds": 32.32620588235294,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    },
+    "filter_then_affine": {
+      "episodes": 50,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 147.24,
+      "mean_seconds": 35.86428,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    },
+    "interval_filter": {
+      "episodes": 34,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 152.5,
+      "mean_seconds": 36.258117647058825,
+      "mean_tool_calls": 5.176470588235294,
+      "success_rate": 1.0
+    },
+    "parse_then_affine": {
+      "episodes": 50,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 164.24,
+      "mean_seconds": 40.49752,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    }
+  },
+  "episodes": 340,
+  "infrastructure_error_rate": 0.0,
+  "mean_new_tokens": 149.62941176470588,
+  "mean_seconds": 35.9372,
+  "mean_tool_calls": 5.0852941176470585,
+  "success_rate": 0.9735294117647059,
+  "terminal_reasons": {
+    "invalid_patch": 4,
+    "submitted": 331,
+    "tool_budget_exhausted": 5
+  }
+}

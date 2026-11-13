@@ -1,0 +1,113 @@
+{
+  "by_family": {
+    "affine_even": {
+      "episodes": 33,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 279.93939393939394,
+      "mean_seconds": 65.00163636363636,
+      "mean_tool_calls": 4.606060606060606,
+      "success_rate": 0.7575757575757576
+    },
+    "affine_sum": {
+      "episodes": 33,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 232.93939393939394,
+      "mean_seconds": 55.35184848484848,
+      "mean_tool_calls": 5.0606060606060606,
+      "success_rate": 0.9393939393939394
+    },
+    "challenge_chunk": {
+      "episodes": 10,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 280.3,
+      "mean_seconds": 63.9446,
+      "mean_tool_calls": 5.2,
+      "success_rate": 1.0
+    },
+    "challenge_clamp": {
+      "episodes": 10,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 243.8,
+      "mean_seconds": 55.6765,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    },
+    "challenge_split": {
+      "episodes": 10,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 331.7,
+      "mean_seconds": 75.3389,
+      "mean_tool_calls": 4.2,
+      "success_rate": 0.5
+    },
+    "challenge_window": {
+      "episodes": 10,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 231.3,
+      "mean_seconds": 53.8414,
+      "mean_tool_calls": 5.0,
+      "success_rate": 0.9
+    },
+    "delimiter_first": {
+      "episodes": 33,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 230.72727272727272,
+      "mean_seconds": 55.20963636363636,
+      "mean_tool_calls": 5.0606060606060606,
+      "success_rate": 1.0
+    },
+    "delimiter_last": {
+      "episodes": 33,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 253.96969696969697,
+      "mean_seconds": 59.717181818181814,
+      "mean_tool_calls": 5.121212121212121,
+      "success_rate": 1.0
+    },
+    "filter_ceiling": {
+      "episodes": 34,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 246.26470588235293,
+      "mean_seconds": 58.074294117647064,
+      "mean_tool_calls": 5.0,
+      "success_rate": 1.0
+    },
+    "filter_then_affine": {
+      "episodes": 50,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 235.38,
+      "mean_seconds": 53.4978,
+      "mean_tool_calls": 5.2,
+      "success_rate": 0.96
+    },
+    "interval_filter": {
+      "episodes": 34,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 278.6764705882353,
+      "mean_seconds": 65.39411764705882,
+      "mean_tool_calls": 5.176470588235294,
+      "success_rate": 1.0
+    },
+    "parse_then_affine": {
+      "episodes": 50,
+      "infrastructure_error_rate": 0.0,
+      "mean_new_tokens": 201.12,
+      "mean_seconds": 48.97326,
+      "mean_tool_calls": 4.9,
+      "success_rate": 0.94
+    }
+  },
+  "episodes": 340,
+  "infrastructure_error_rate": 0.0,
+  "mean_new_tokens": 245.48235294117646,
+  "mean_seconds": 57.56983235294117,
+  "mean_tool_calls": 5.0,
+  "success_rate": 0.9382352941176471,
+  "terminal_reasons": {
+    "invalid_action": 1,
+    "malformed_tool_call": 1,
+    "submitted": 319,
+    "tool_budget_exhausted": 1,
+    "truncated": 18
+  }
+}
