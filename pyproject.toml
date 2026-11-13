@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "toolsmith-rl"
+version = "0.1.0"
+description = "Tool-using Python bug repair with a small model: prompt-only baseline, LoRA SFT, and stateful GRPO"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Harshit Brahmbhatt" }]
+keywords = ["reinforcement-learning", "grpo", "lora", "code-repair", "tool-use", "llm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/hr231/toolsmith-rl"
+
+[project.scripts]
+toolsmith = "toolsmith.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4,<9",
+    "ruff>=0.14,<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/toolsmith"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Template data: issue statements are full prose sentences, not wrapped code.
+"src/toolsmith/templates.py" = ["E501"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers --strict-config"
+markers = [
+    "sandbox: real Docker integration; enable with TOOLSMITH_RUN_SANDBOX_TESTS=1",
+]
