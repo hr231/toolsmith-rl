@@ -10,6 +10,10 @@ learning (stateful GRPO) add to plain prompting. Submitted patches are scored by
 private checks in fresh Docker containers that the model never sees. Training ran
 on T4 GPUs; all generated code ran only on a separate sandbox host.
 
+The trained SFT and GRPO LoRA adapters are on Hugging Face:
+[harshit2312/dory-4b-toolsmith-lora](https://huggingface.co/harshit2312/dory-4b-toolsmith-lora)
+(`subfolder="sft"` or `subfolder="grpo"`).
+
 ## Results
 
 Same 340 frozen tasks for every model: seed 17, temperature 1.0, top_p 0.95, 256
@@ -350,6 +354,7 @@ Code, generated data, and original fixtures: [MIT](LICENSE). The base model,
 [NVIDIA Nemotron Labs Dory 1.0 4B](https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16)
 (revision `f6c832e6`), is NVIDIA's under [OpenMDW-1.1](licenses/OpenMDW-1.1.txt).
 Adapters derived from it must ship with that agreement and this notice of origin:
-"NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16, by NVIDIA, under OpenMDW-1.1." Model weights,
-checkpoints, credentials, and generated datasets are not committed; regenerate the
-dataset with `toolsmith data generate`.
+"NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16, by NVIDIA, under OpenMDW-1.1." The
+[published adapters](https://huggingface.co/harshit2312/dory-4b-toolsmith-lora) do.
+Model weights, checkpoints, credentials, and generated datasets are not committed
+here; regenerate the dataset with `toolsmith data generate`.
