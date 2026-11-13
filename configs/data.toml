@@ -1,0 +1,10 @@
+# Deterministic synthetic repair dataset (840 tasks).
+# - Families are fixed per split before sampling; see src/toolsmith/templates.py.
+# - Challenge cases are explicit edge specifications (maximum 40).
+[dataset]
+seed = 17
+train = 500
+dev = 100
+test_iid = 100
+test_compositional = 100
+challenge = 40
