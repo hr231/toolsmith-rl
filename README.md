@@ -344,7 +344,7 @@ for either.
 - **No live escalation.** The hybrid router is implemented and tested as a
   decision engine only; no larger model ran.
 
-## License and credits
+## License
 
 Code, generated data, and original fixtures: [MIT](LICENSE). The base model,
 [NVIDIA Nemotron Labs Dory 1.0 4B](https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16)
@@ -353,9 +353,3 @@ Adapters derived from it must ship with that agreement and this notice of origin
 "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16, by NVIDIA, under OpenMDW-1.1." Model weights,
 checkpoints, credentials, and generated datasets are not committed; regenerate the
 dataset with `toolsmith data generate`.
-
-Inspired by Kevin Wu's [Qwen, Minus the E](https://kevin-wu.ca/blog/qwn/) and
-[repository](https://github.com/kevinyvv/qwen-3-1.7b-finetune-proj). We borrow the
-small-model SFT-versus-RL experimental framing, not its implementation, data, or
-results. The demo reflects established [coding-agent workflows](https://openai.com/business/learn/how-openai-uses-codex/),
-with a deliberately smaller, measurable task domain.
