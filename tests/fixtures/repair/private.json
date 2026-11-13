@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "task_id": "pagination-final-page",
+  "cases": [
+    {"id": "exact-page", "module": "pagination", "function": "paginate", "args": [[8, 9, 10, 11], 2], "kwargs": {}, "expected": [[8, 9], [10, 11]]},
+    {"id": "partial-page", "module": "pagination", "function": "paginate", "args": [[1, 2, 3, 4, 5], 2], "kwargs": {}, "expected": [[1, 2], [3, 4], [5]]},
+    {"id": "empty", "module": "pagination", "function": "paginate", "args": [[], 3], "kwargs": {}, "expected": []},
+    {"id": "single-item", "module": "pagination", "function": "paginate", "args": [["only"], 4], "kwargs": {}, "expected": [["only"]]},
+    {"id": "zero-size", "module": "pagination", "function": "paginate", "args": [[1], 0], "kwargs": {}, "raises": "ValueError"},
+    {"id": "negative-size", "module": "pagination", "function": "paginate", "args": [[1], -2], "kwargs": {}, "raises": "ValueError"}
+  ]
+}
