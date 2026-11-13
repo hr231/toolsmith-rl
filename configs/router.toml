@@ -1,0 +1,6 @@
+# Heuristic difficulty routing limits.
+# - Limits are inclusive.
+# - Input bytes include issue, paths, source, and visible tests.
+[router]
+small_max_files = 3
+small_max_input_bytes = 12000

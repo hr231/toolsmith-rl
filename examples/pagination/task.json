@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "pagination-final-page",
+  "issue": "paginate drops the final page when the item count is an exact multiple of page_size. Return every item exactly once in ordered pages of at most page_size items. Preserve an empty result for empty input and reject nonpositive page sizes with ValueError. Change only the implementation, not the tests.",
+  "source_files": {
+    "src/pagination.py": "def paginate(items, page_size):\n    if page_size <= 0:\n        raise ValueError('page_size must be positive')\n    return [items[start:start + page_size] for start in range(0, len(items) - page_size, page_size)]\n"
+  },
+  "visible_tests": {
+    "tests/test_pagination.py": "from pagination import paginate\n\ndef test_exact_multiple_keeps_final_page():\n    assert paginate([1, 2, 3, 4], 2) == [[1, 2], [3, 4]]\n"
+  }
+}
